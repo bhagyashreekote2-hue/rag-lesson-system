@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "id": "accurate_grounded",
+      "desc": "Must say RAG = Retrieval + Generation, LLM does NOT retrain, retriever searches docs",
+      "fail": "Says RAG retrains LLM"
+    },
+    {
+      "id": "beginner_friendly_language",
+      "desc": "Uses simple English, short sentences, 12th standard can read, Hinglish ok",
+      "fail": "Uses big words like latent semantic embedding without explaining"
+    },
+    {
+      "id": "teaches_by_example",
+      "desc": "Must have 1 real-life analogy (library / open-book exam) AND 1 step example Question->Retrieval->Answer",
+      "fail": "No analogy or no concrete example"
+    },
+    {
+      "id": "no_unexplained_jargon",
+      "desc": "Every technical word LLM, vector, database must be explained in brackets same sentence",
+      "fail": "Uses vector DB without simple explanation"
+    },
+    {
+      "id": "covers_key_points",
+      "desc": "Must cover What is RAG, Why needed (hallucination, old data), How works (3 steps), use-case",
+      "fail": "Misses What/Why/How"
+    },
+    {
+      "id": "coherent_flow",
+      "desc": "Structure: Hook -> What -> Why -> How (steps) -> Example -> Recap + Next step",
+      "fail": "Jumps directly to technical without hook"
+    }
+  ]
+}
